@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="military_vehicle">
+    <static>true</static>
+
+    <link name="body">
+      <!-- Main body / chassis -->
+      <visual name="chassis_visual">
+        <pose>0 0 0.95 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>4.5 2.1 1.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.27 0.17 1</ambient>
+          <diffuse>0.23 0.27 0.17 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="chassis_collision">
+        <pose>0 0 0.95 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>4.5 2.1 1.0</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- Cabin / upper structure -->
+      <visual name="cabin_visual">
+        <pose>-0.3 0 2.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 2.0 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.27 0.17 1</ambient>
+          <diffuse>0.23 0.27 0.17 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="cabin_collision">
+        <pose>-0.3 0 2.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.0 2.0 1.2</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- Hood / engine block -->
+      <visual name="hood_visual">
+        <pose>1.6 0 1.65 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 1.8 0.4</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.23 0.27 0.17 1</ambient>
+          <diffuse>0.23 0.27 0.17 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="hood_collision">
+        <pose>1.6 0 1.65 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 1.8 0.4</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- Front-left wheel -->
+      <visual name="wheel_fl_visual">
+        <pose>1.4 1.15 0.45 1.5708 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.45</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.05 0.05 0.05 1</ambient>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <!-- Front-right wheel -->
+      <visual name="wheel_fr_visual">
+        <pose>1.4 -1.15 0.45 1.5708 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.45</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.05 0.05 0.05 1</ambient>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <!-- Rear-left wheel -->
+      <visual name="wheel_rl_visual">
+        <pose>-1.4 1.15 0.45 1.5708 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.45</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.05 0.05 0.05 1</ambient>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <!-- Rear-right wheel -->
+      <visual name="wheel_rr_visual">
+        <pose>-1.4 -1.15 0.45 1.5708 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.45</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.05 0.05 0.05 1</ambient>
+          <diffuse>0.05 0.05 0.05 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
